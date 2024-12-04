@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>IJsbrand Schelvis</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/7213ffd83f.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery.scrollto@2.1.3/jquery.scrollTo.min.js"></script>
+    <script defer src="script.js"></script>
+</head>
+<body class="not_loaded">
+    <div class="nav">
+        <div class="nav_content">
+            <div id="logo"><a href="#home">Portfolio.</a></div>
+            <div class="hamburger-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <nav>
+                <ul id="navItems">
+                    <li id="navItem1" class="nav_item"><a>About</a></li>
+                    <li id="navItem2" class="nav_item"><a>Projects</a></li>
+                    <li id="navItem3" class="nav_item"><a>Resume</a></li>
+                    <li id="navItem4" class="nav_item"><a>Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <div id="home" class="home">
+        <span class="loader"></span>
+        <div class="circle one"></div>
+        <div class="circle two"></div>
+        <div id="section1" class="visibility_check"></div>
+        <div class="home_content">
+            <img src="imgs/photo.png" alt="">
+            <div class="home_text">
+                <h2>Hello, my name is</h2>
+                <h1 id="homeTitle"></h1>
+                <h1 id="widthTest">IJsbrand Schelvis</h1>
+            </div>
+        </div>
+        <div class="scroll_reminder">
+            <a href="#about">
+                <p>Scroll down for more</p>
+                <i class="down_icon fa-solid fa-chevron-down"></i>
+            </a>
+        </div>
+    </div>
+
+    <div class="about" id="about">
+        <div class="circle three"></div>
+        <div id="section2" class="visibility_check"></div>
+        <div class="about_content">
+            <div class="text_content">
+                <h3 class="title">About me</h3>
+                <p>
+                    I am a twenty-year-old MBO student at Nova College in Beverwijk, in my third year of studying software development. I have a passion for graphic design and enjoy front-end web development.
+                    <br><br>
+                    After graduation, I am planning on studying for a bachelor's in Communication and Multimedia Design at an HBO.
+                    <br><br>
+                    I am from Velsen-Noord in the Netherlands where I spend my time hanging out with friends, playing video games, and tinkering with motorcycles.
+                </p>
+            </div>
+            <img src="imgs/photo.png" alt="">
+        </div>
+    </div>
+
+    <div class="projects" id="projects">
+        <div class="projects_content">
+            <div class="all_project_container">
+                <div class="swipe_notification">
+                    <p>Swipe to discover more</p>
+                    <i class="fa-solid fa-arrows-left-right"></i>
+                </div>
+                <div id="projectCircle" class="circle four"></div>
+                <div id="section3" class="visibility_check"></div>
+
+                <div class="project_container" data-index="0" data-status="active" data-color="93,29,176">
+                    <div class="project_title_container">
+                        <p class="project_title">Portfolio Website</p>
+                    </div>
+                    <div class="project_display_wrapper">
+                        <img class="project_display" src="https://i.gyazo.com/89e334b5eef71ad8468299b362b0c089.png" alt="">
+                    </div>
+                    <div class="project_info">
+                        <p class="project_description">This project is the one you are looking at right now! <br> A digital portfolio displaying some personal information and recent projects. A one-page responsive website with a modern design,  accessible on desktop, tablet, and smartphone. </p>
+                        <div class="project_links">
+                            <p>HTML CSS JS</p>
+                            <a href="https://codepen.io/ischelvis/pen/MWZZMxE" target=”_blank” class="project_link">Codepen</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project_container" data-index="1" data-status="before" data-color="210,56,103">
+                    <div class="project_title_container">
+                        <p class="project_title">Database Overview</p>
+                    </div>
+                    <div class="project_display_wrapper">
+                        <img class="project_display" src="https://i.gyazo.com/768520f7c66beb286ba42ffb1336f93b.png" alt="">
+                    </div>
+                    <div class="project_info">
+                        <div class="project_info">
+                            <p class="project_description">This project is an SQL database overview built into a simple but attractive website. <br> Using several SQL queries, the web pages display, among other things, a search function for customers, orders per status and year, and several product filters. </p>
+                            <div class="project_links">
+                                <p>PHP SQL HTML CSS</p>
+                                <a href="https://github.com/ischelvis/database-overview" target=”_blank” class="project_link">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="project_container" data-index="2" data-status="unkown" data-color="239,193,83">
+                    <div class="project_title_container">
+                        <p class="project_title">Currency Converter</p>
+                    </div>
+                    <div class="project_display_wrapper">
+                        <img class="project_display" src="https://i.gyazo.com/45f877a17af696c933117d59162ad4c6.png" alt="">
+                    </div>
+                    <div class="project_info">
+                        <p class="project_description">This project is a currency converter website using the Fixer API. <br> While just using an API was the original thought behind this project, it was a fantastic opportunity to focus on user experience. Improving the currency selection menus and search functions until the experience of using them was seamless. </p>
+                        <div class="project_links">
+                            <p>HTML CSS JS</p>
+                            <a href="https://codepen.io/ischelvis/full/xxmmNXE" target=”_blank” class="project_link">Codepen</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project_container" data-index="3" data-status="unknown" data-color="0,0,0">
+                    <div class="project_title_container">
+                        <p class="project_title">File Explorer</p>
+                    </div>
+                    <div class="project_display_wrapper" style="background-color: #bfbfbf">
+                        <img class="project_display" src="https://i.gyazo.com/9452d84c1d58b642ed15668d7da5d7a1.png" alt="">
+                    </div>
+                    <div class="project_info">
+                        <p class="project_description">This project is an online file explorer written in PHP. <br> The functionality includes folder navigation, a working breadcrum, a showcase of images, file information, and the editing of text files. </p>
+                        <div class="project_links">
+                            <p>PHP HTML CSS</p>
+                            <a href="https://github.com/ischelvis/file-explorer" target=”_blank” class="project_link">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project_container" data-index="4" data-status="after" data-color="44,62,185">
+                    <div class="project_title_container">
+                        <p class="project_title">Rebellenclub</p>
+                    </div>
+                    <div class="project_display_wrapper">
+                        <img class="project_display" src="https://i.gyazo.com/7b59d00cbe6d3a75b4f3666d50cb5b60.png" alt="">
+                    </div>
+                    <div class="project_info">
+                        <p class="project_description">I made this website for a youth association in Zuidermeer. <br> It was my first website created for real-world use. Focussing on the UX and responsive design was paramount in ensuring that the site effectively met the client's needs, providing an intuitive, accessible, and visually appealing website across all devices.  </p>
+                        <div class="project_links">
+                            <p>HTML SCSS JS</p>
+                            <a href="https://rebellenzuidermeer.nl/" target=”_blank” class="project_link">Website</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="arrow_button clickable left"><i class="fa-solid fa-arrow-left arrow"></i></div>
+                <div class="arrow_button clickable right"><i class="fa-solid fa-arrow-right arrow"></i></div>
+            </div>
+        </div>
+    </div>
+
+    <div id="resume" class="resume">
+        <div id="resumeContent">
+            <div id="section4" class="visibility_check"></div>
+            <div class="resume_text">
+                <h3>Download my resume</h3>
+            </div>
+            <a href="CV_IJsbrand_Schelvis.pdf" target=”_blank” download="proposed_file_name">
+                <div id="dwnBtn" class="button">Resume</div>
+            </a>
+        </div>
+    </div>
+
+    <div id="contact" class="contact">
+        <div id="section5" class="visibility_check"></div>
+        <div class="circle five"></div>
+        <div class="contact_content">
+            <div class="form_container">
+                <form id="contactForm" method="post">
+                    <fieldset><input type="text" id="name" name="name" tabindex="1" placeholder="Your name" required></fieldset>
+                    <fieldset><input type="email" id="email" name="email" tabindex="2" placeholder="Your email adress" required></fieldset>
+                    <fieldset><input type="tel" id="phone" name="phone" tabindex="3" placeholder="Your phone number (optional)"></fieldset>
+                    <fieldset><textarea id="subject" name="subject" tabindex="4" placeholder="Write your message.." required></textarea></fieldset>
+                    <fieldset id="contactBtnContainer"><input id="contactBtn" type="submit" value="Submit"><p id="contactBtnText">Message sent!</p></fieldset>
+                </form>
+            </div>
+            <div class="contact_info_container">
+                <p class="contact_info">Phone</p>
+                <p class="contact_info">+31640011681</p>
+                <p class="contact_info">Email</p>
+                <p class="contact_info">ijsbrandsch@gmail.com</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
